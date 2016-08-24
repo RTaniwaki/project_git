@@ -1,5 +1,1 @@
-ABCD
-
-if( mudei)
-	avisar
-end if
+apaguei
