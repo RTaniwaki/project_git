@@ -110,3 +110,16 @@
 -Abreviando o Nome do Repositório Remoto:
 	git remote add abreviação endereço:/do/repositório
 
+-Fetch: indica o endereço
+	git fetch caminho:/do/remoto
+	Obs: podemos usar git fetch abreviação
+
+-Pull: copia para o seu clone o que tem de diferente do repositório original
+	git pull
+	Obs: eralmente busca os dados do servidor de onde você fez o clone originalmente e automaticamente
+	tenta fazer o merge dele no código que você está trabalhando atualmente.
+
+-Push: manda os arquivos do teu clone para o original
+	git push nomeRemoto branch
+	(não sei utilizar)
+
