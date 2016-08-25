@@ -1,0 +1,30 @@
+###configurações iniciais###
+
+-Criando um usuário:
+	git config --global user.name "nome"
+	git config --global user.email coloque.o.e-mail
+
+	Obs: utilize --global para ficara "logado" tudo quer for usar com o Git, caso contrário
+retire o --global para "logar" em apenas um projeto específico.
+
+-Editor de texto:
+	git config --global core.editor 'C:/caminho/para/o/editor.exe'
+
+	Obs: editor padrão Vi ou Vim.
+
+-Ferramenta de diferenciação:
+	git config --global merge.tool vimdiff
+
+	Obs: não descobri como abrir o vimdiff. (Git aceita kdiff3, tkdiff, meld, xxdiff, emerge,
+vimdiff, gvimdiff, ecmerge e opendiff)
+
+-Verificação das Configurações:
+	git config --list
+
+-Função Help:
+	git help comando
+
+	Obs: abre uma pg na web.
+
+
+###Repositório Git###
