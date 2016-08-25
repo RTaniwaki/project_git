@@ -109,3 +109,4 @@
 
 -Abreviando o Nome do Repositório Remoto:
 	git remote add abreviação endereço:/do/repositório
+
