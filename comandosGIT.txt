@@ -79,4 +79,12 @@ a necessidade através do comando 'git status'.
 -Histórico de Commit's:
 	git log
 	Obs: -p mostra os diff's de cada commit, pode-se colocar -número para mostras apenas uma 
-quantia exata de commit's.
+quantia exata de commit's, --stat mostra resumo de modificações.
+	git log --pretty=format:"%h - %an, %ar : %s"
+	Obs: tabela em https://git-scm.com/book/pt-br/v1/Git-Essencial-Visualizando-o-Hist%C3%B3rico-de-Commits
+
+-Limitar saída de Log:
+	git log --since=2.weeks
+
+-Usando Interface para Visualizar Histórico:
+	abrir o Git Gui da pasta -> repositório -> visualizar ..... Histórico.
