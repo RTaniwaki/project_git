@@ -138,9 +138,18 @@
 	git tag
 
 -Criando Tag:
-	git tag -a v1.0 -m 'version 1.0'
-
+	-tag anotada:
+		git tag -a v1.0 -m 'version 1.0'
+	-tag assinada:
+		git tag -s v1.0 -m 'ass version 1.0'
+		Obs:necessário ter permissão.
 -Ver a tag:
 	git show v1.0
 
+-Verificando Tag:
+	git tag -v v1.0
+	Obs: Você precisa da chave pública do assinador no seu chaveiro para este comando funcionar corretamente.
 
+-Tag em Commit:
+	git tag -a v1.0 chaveDeVerificação
+	Obs: pode ser apenas parte da chave de verificação
