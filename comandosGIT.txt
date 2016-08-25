@@ -123,3 +123,24 @@
 	git push nomeRemoto branch
 	(não sei utilizar)
 
+-Inspecionar um Remoto:
+	git remote show nomeRemoto
+	Obs: nomeRemoto é o endereço ou a abreviação feita.
+
+-Removendo e Renomeando Remotos:
+	git remote rm abreviação
+	git remote rename abreviaçãoVelha abreviaçãoNova
+
+
+###Tagging###
+
+-Listando as Tags:
+	git tag
+
+-Criando Tag:
+	git tag -a v1.0 -m 'version 1.0'
+
+-Ver a tag:
+	git show v1.0
+
+
