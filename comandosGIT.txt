@@ -28,3 +28,41 @@ vimdiff, gvimdiff, ecmerge e opendiff)
 
 
 ###Repositório Git###
+
+-Repositório em Diretório Existente:
+	git init
+	git add nome.do.arquivo.extensão
+	git commit nome.do.arquivo.extensão
+
+	Obs: caso tenham muitos arquivos para serem comitados, utilize o comando -A em 'add' e -a
+em 'commit' para adicional todos os arquivos e comitar todos os arquivos de uma vez.
+
+-Clonar um Repositório:
+	git clone endereço/da/pasta/ou/arquivo/a/ser/copiado NOME
+
+	Obs: pode ser clones de repositórios da nuvem e em NOME é possível modificar o nome da pasta destino.
+
+
+###Comandos essenciais###
+
+-Verificar o Status dos Arquivos:
+	git status
+
+-Adicionar arquivos:
+	git add NOME.extensão
+
+	Obs: deve-se usar esse comando toda vez que se faz uma alteração no arquivo. É possível verificar
+a necessidade através do comando 'git status'.
+
+-Ignorar arquivos:
+	(verificar o comando)
+
+-Visualizar Mudanças:
+	git diff --cached
+
+	Obs: exibe o que tem de diferente de uma versão para outra, não está exibindo no vimdiff.
+
+-Comitando as Mudanças:
+	git commit NOME.extensão
+
+	Obs: pode usar -a para all, -m 'digite a mensagem'.
