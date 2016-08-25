@@ -5,18 +5,18 @@
 	git config --global user.email coloque.o.e-mail
 
 	Obs: utilize --global para ficara "logado" tudo quer for usar com o Git, caso contrário
-retire o --global para "logar" em apenas um projeto específico.
+	retire o --global para "logar" em apenas um projeto específico.
 
 -Editor de texto:
 	git config --global core.editor 'C:/caminho/para/o/editor.exe'
 
-	Obs: editor padrão Vi ou Vim.
+	Obs: editor padrão Vi ou Vim. C:\Program Files (x86)\Notepad++
 
 -Ferramenta de diferenciação:
 	git config --global merge.tool vimdiff
 
 	Obs: não descobri como abrir o vimdiff. (Git aceita kdiff3, tkdiff, meld, xxdiff, emerge,
-vimdiff, gvimdiff, ecmerge e opendiff)
+	vimdiff, gvimdiff, ecmerge e opendiff)
 
 -Verificação das Configurações:
 	git config --list
@@ -35,12 +35,13 @@ vimdiff, gvimdiff, ecmerge e opendiff)
 	git commit nome.do.arquivo.extensão
 
 	Obs: caso tenham muitos arquivos para serem comitados, utilize o comando -A em 'add' e -a
-em 'commit' para adicional todos os arquivos e comitar todos os arquivos de uma vez.
+	em 'commit' para adicional todos os arquivos e comitar todos os arquivos de uma vez.
 
 -Clonar um Repositório:
-	git clone endereço/da/pasta/ou/arquivo/a/ser/copiado NOME
+	git clone endereço:/da/pasta/ou/arquivo/a/ser/copiado NOME
 
-	Obs: pode ser clones de repositórios da nuvem e em NOME é possível modificar o nome da pasta destino.
+	Obs: nomes de pastas com espaço utilizar "", podem ser clonados repositórios da nuvem 
+	e em NOME é possível modificar o nome da pasta destino.
 
 
 ###Comandos essenciais###
@@ -52,7 +53,7 @@ em 'commit' para adicional todos os arquivos e comitar todos os arquivos de uma 
 	git add NOME.extensão
 
 	Obs: deve-se usar esse comando toda vez que se faz uma alteração no arquivo. É possível verificar
-a necessidade através do comando 'git status'.
+	a necessidade através do comando 'git status'.
 
 -Ignorar arquivos:
 	(verificar o comando)
@@ -79,7 +80,7 @@ a necessidade através do comando 'git status'.
 -Histórico de Commit's:
 	git log
 	Obs: -p mostra os diff's de cada commit, pode-se colocar -número para mostras apenas uma 
-quantia exata de commit's, --stat mostra resumo de modificações.
+	quantia exata de commit's, --stat mostra resumo de modificações.
 	git log --pretty=format:"%h - %an, %ar : %s"
 	Obs: tabela em https://git-scm.com/book/pt-br/v1/Git-Essencial-Visualizando-o-Hist%C3%B3rico-de-Commits
 
@@ -88,3 +89,23 @@ quantia exata de commit's, --stat mostra resumo de modificações.
 
 -Usando Interface para Visualizar Histórico:
 	abrir o Git Gui da pasta -> repositório -> visualizar ..... Histórico.
+
+-Modificando o Último Commit:
+	git commit --amend
+	Obs: execute os comandos faltantes e use o --amend no lugar de um commit normal.
+
+-Tirando Arquivo da Área de seleção:
+	git reset HEAD nome.extensão
+	Obs: para caso você tenha dado um "git add -A",mas não era para selecionar todos.
+
+-Desfazer modificações:
+	git checkout -- nome.extensão
+	OBS:CUIDADO AO UTILIZAR ESTE COMANDO, POSSÍVEL PERDER MODIFICAÇÕES PERMANENTEMENTE.
+
+###Remotos###
+
+-Exibindo os Remotos:
+	git remote -v
+
+-Abreviando o Nome do Repositório Remoto:
+	git remote add abreviação endereço:/do/repositório
