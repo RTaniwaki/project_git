@@ -66,3 +66,17 @@ a necessidade através do comando 'git status'.
 	git commit NOME.extensão
 
 	Obs: pode usar -a para all, -m 'digite a mensagem'.
+
+-Remover Arquivos:
+	rm nome.extensão
+	OBS: CUIDADO PARA NÃO APAGAR ARQUIVO ERRADO.
+	git rm --cached nome.extensão
+	Obs: remove o arquivo apenas do monitoramento do Git. O arquivo permanece no HD.
+
+-Renomear arquivo existente:
+	git mv arquivo_original arquivo_destino
+
+-Histórico de Commit's:
+	git log
+	Obs: -p mostra os diff's de cada commit, pode-se colocar -número para mostras apenas uma 
+quantia exata de commit's.
