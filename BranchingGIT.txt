@@ -13,5 +13,5 @@
 	Obs: ao commitar, apenas o branch apontado irá prosseguir.
 		ex: branch marter e testing. Com o HEAD em testing, apenas o testing irá prosseguir com um novo
 		commit.
+	Obs: para criar e mudar o HEAD ao mesmo tempo use checkout -b nomeDoBranch.
 
-###################
