@@ -19,4 +19,12 @@
 	git branch -d nomeDoBranch
 
 -Problemas:
-	conflitos entre arquivos ao realizar o merge devem ser resolvidos manualmente.
+	conflitos entre arquivos ao realizar o merge devem ser resolvidos manualmente. Adicionar e comitar,
+	posteriormente.
+
+-Verificar Branches:
+	git branch
+	git branch -v			ver ultimo commit em cada branch
+	git branch --merged		branch mesclados		
+	git branch --no-merged		branch não mesclados
+
