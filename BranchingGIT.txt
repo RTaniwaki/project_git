@@ -15,3 +15,5 @@
 		commit.
 	Obs: para criar e mudar o HEAD ao mesmo tempo use checkout -b nomeDoBranch.
 
+-Apagar um Branch:
+	git branch -d nomeDoBranch
