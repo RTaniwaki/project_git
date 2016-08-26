@@ -22,7 +22,7 @@
 	conflitos entre arquivos ao realizar o merge devem ser resolvidos manualmente. Adicionar e comitar,
 	posteriormente.
 
--Verificar Branches:
+-Verificar Branch's:
 	git branch
 	git branch -v			ver ultimo commit em cada branch
 	git branch --merged		branch mesclados		
