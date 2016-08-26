@@ -1,4 +1,4 @@
-###configurações iniciais###
+###Configurações Iniciais###
 
 -Criando um usuário:
 	git config --global user.name "nome"
@@ -150,6 +150,23 @@
 	git tag -v v1.0
 	Obs: Você precisa da chave pública do assinador no seu chaveiro para este comando funcionar corretamente.
 
--Tag em Commit:
+-Tag em Commit/posterior:
 	git tag -a v1.0 chaveDeVerificação
 	Obs: pode ser apenas parte da chave de verificação
+
+-Compartilhando Tags:
+	execute o comando 'push' para enviar a tag para os servidores remotos.
+	caso hajam muitas tag's adicione --tags ao final do comando.
+
+
+###Dicas/Truques###
+
+-Preenchimento Automático:
+	no git bash ao escrever algum comando incompleto aperte 2x tab para aparecer uma lista de comandos
+	possíveis.
+
+-Pseudônimos no Git:
+	git config --global alias.sigla comando
+	Obs: você pode criar siglas para os comandos. Pode colocar um comando maior usando ''. Pode usar ! para
+	rodar um comando externo.
+	

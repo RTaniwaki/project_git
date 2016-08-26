@@ -1,0 +1,4 @@
+###Branching###
+
+	Usado para criar uma ramificação onde você diverge da linha principal para continuar o desenvolvimento
+sem interferir na linha principal.
