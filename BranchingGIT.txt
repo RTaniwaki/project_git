@@ -1,4 +1,15 @@
 ###Branching###
 
 	Usado para criar uma ramificação onde você diverge da linha principal para continuar o desenvolvimento
-sem interferir na linha principal.
+	sem interferir na linha principal.
+
+-Criando um Novo Branch:
+	git branch nome
+	Obs: irá criar um novo branch para o commit em que você está. Ele apenas cria, não muda o HEAD para esse
+	branch.
+
+-Mudar de Branch:
+	git checkout nomeDoBranch
+	Obs: ao commitar, apenas o branch apontado irá prosseguir.
+		ex: branch marter e testing. Com o HEAD em testing, apenas o testing irá prosseguir com um novo
+		commit.
