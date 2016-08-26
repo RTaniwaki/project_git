@@ -17,3 +17,6 @@
 
 -Apagar um Branch:
 	git branch -d nomeDoBranch
+
+-Problemas:
+	conflitos entre arquivos ao realizar o merge devem ser resolvidos manualmente.
