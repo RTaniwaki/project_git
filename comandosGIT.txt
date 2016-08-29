@@ -169,4 +169,12 @@
 	git config --global alias.sigla comando
 	Obs: você pode criar siglas para os comandos. Pode colocar um comando maior usando ''. Pode usar ! para
 	rodar um comando externo.
-	
+
+###Rebasing###
+
+-Mesmo resultado de um Merge, porém cria um histórico mais limpo.
+	get rebase nomeDoBranch
+	Obs: podemos fazer 'get rebase --onto master server client', irá resultar em :Faça o checkout do branch
+	client, verifique as mudanças a partir do ancestral em comum aos branches client e server, e coloque-as
+	no master. O cliente ira se juntar ao master e o server pernanecerá o mesmo.
+	NAO FAÇA REBASE DE COMMITS QUE VOCÊ ENVIOU PARA UM REPOSITÓRIO PÚBLICO!!!!

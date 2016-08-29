@@ -28,3 +28,6 @@
 	git branch --merged		branch mesclados		
 	git branch --no-merged		branch não mesclados
 
+-Branch Remoto: 
+	(?????????????)
+
